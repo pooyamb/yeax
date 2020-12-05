@@ -1,0 +1,16 @@
+[workspace]
+members = [".", "examples/*"]
+
+[package]
+name = "yeax"
+version = "0.0.0"
+authors = ["Pouya M. B. <pooyamb@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-service = "1"
+actix-web = "3"
+downcast-rs = "1.2"
+
+[patch.crates-io]
+yeax = { path = "." }
