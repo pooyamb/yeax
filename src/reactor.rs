@@ -12,7 +12,7 @@ use crate::di::{InjectFactory, Injectable, Injector};
 
 #[derive(Default)]
 pub struct Reactor {
-    pub apps: HashMap<TypeId, Box<dyn App>>,
+    pub(crate) apps: HashMap<TypeId, Box<dyn App>>,
     registry: Registry,
 }
 
