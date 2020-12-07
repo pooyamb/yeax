@@ -1,0 +1,11 @@
+[package]
+name = "yeax-api"
+version = "0.0.0"
+authors = ["Pouya M. B. <pooyamb@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "3"
+serde = "1"
+serde_json = "1"
+yeax-api-derive = "0"
