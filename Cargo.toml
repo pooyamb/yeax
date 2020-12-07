@@ -1,5 +1,5 @@
 [workspace]
-members = [".", "examples/*"]
+members = [".", "yeax-api", "yeax-api-derive", "examples/*"]
 
 [package]
 name = "yeax"
@@ -14,3 +14,5 @@ downcast-rs = "1.2"
 
 [patch.crates-io]
 yeax = { path = "." }
+yeax-api = { path = "./yeax-api" }
+yeax-api-derive = { path = "./yeax-api-derive" }
