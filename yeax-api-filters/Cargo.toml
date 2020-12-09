@@ -1,0 +1,19 @@
+[package]
+name = "yeax-api-filters"
+version = "0.1.0"
+authors = ["Pouya M. B. <pooyamb@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+uuid = { version = "0.8", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+# We shouldn't actually need to specify a runtime for this to work, but sqlx errors otherwise
+sqlx = { version = "0.4", features = [
+    "postgres",
+    "any",
+    "uuid",
+    "chrono",
+    "runtime-actix-rustls"
+] }
